@@ -170,11 +170,6 @@ body {
 /*===========Media queries==========*/
 
 @media (min-width: 992px) {
-  .container {
-    display: grid;
-    place-content: center;
-  }
-
   .card {
     max-width: 400px;
   }
