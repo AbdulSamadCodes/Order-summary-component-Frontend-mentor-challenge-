@@ -1,0 +1,189 @@
+/*==========Google font link==========*/
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Arvo:wght@700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*=========================Custom Properties========================*/
+
+:root {
+  /*==========Colors========*/
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /*=========Typography========*/
+
+  --font-family-RedHat: "Red Hat Display", sans-serif;
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a,
+span,
+input {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  scrollbar-width: thin;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--font-family-RedHat);
+  background-color: var(--pale-blue);
+}
+
+/*=========================Reused styles===========================*/
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  font-family: var(--font-family-RedHat);
+  font-size: 16px;
+  transition: all 200ms linear;
+}
+
+/*=========================Main styles===========================*/
+
+.container {
+  height: 100%;
+  padding: 30px 16px;
+}
+
+.card {
+  background-color: var(--very-pale-blue);
+  max-width: 350px;
+  margin-inline: auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px 30px;
+}
+
+.card-title {
+  font-size: 25px;
+  color: var(--dark-blue);
+  font-weight: 800;
+}
+
+.card-text {
+  margin-block: 25px;
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.music-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.plan-category {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.plan-price {
+  color: var(--desaturated-blue);
+  font-size: 15px;
+  font-weight: 600;
+  margin-block-start: 3px;
+}
+
+.change-btn {
+  color: var(--bright-blue);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.payment-btn {
+  margin-block: 40px;
+  padding: 16px 15px;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  color: var(--pale-blue);
+  font-weight: 700;
+  box-shadow: 0px 10px 10px 3px hsl(245, 75%, 52%, 0.4);
+}
+
+.payment-btn:is(:hover, :focus) {
+  background-color: rgb(133, 60, 222);
+  box-shadow: 0px 10px 10px 3px rgba(133, 60, 222, 0.4);
+}
+
+.cancel-btn {
+  color: var(--desaturated-blue);
+  font-weight: 800;
+}
+
+.cancel-btn:is(:hover, :focus) {
+  color: var(--dark-blue);
+}
+/*===========Media queries==========*/
+
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    place-content: center;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+
+  .card-content {
+    padding-block: 25px;
+  }
+
+  .annual-plan {
+    margin-inline-end: auto;
+  }
+}
